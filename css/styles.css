@@ -35,7 +35,8 @@
 body {
   font-family: 'Open Sans', Arial, Helvetica, 'Ubuntu', sans-serif;
   font-size: 16px;
-  background-color: var(--color-interface-light);
+  background-color: var(--color-interface-dark);
+  min-height: 100vh;
 }
 
 h1, 
@@ -52,6 +53,10 @@ header {
   padding-bottom: var(--spacing-medium);
 }
 
+main{
+  background-color: var(--color-interface-light);
+}
+
 .header-item {
   display: flex;
   justify-content: space-between;
@@ -66,7 +71,7 @@ header {
 .title {
   line-height: 1.2;
   letter-spacing: -1px;
-  font-weight: 300;
+  font-weight: 500;
   color: var(--color-text-light);
 }
 
@@ -98,11 +103,10 @@ header {
 .form-task-label {
   font-weight: 600;
   color: var(--color-text-dark);
-  position: fixed;
 }
 
 .form-task-input {
-  margin-top: var(--spacing-large);
+  margin-top: var(--spacing-xsmall);
   width: 81%;
   height: var(--spacing-xxlarge);
   border: 1px solid var(--color-text-dark);
@@ -120,3 +124,37 @@ header {
 
 /* Fim adicionar tarefa */
 
+/* Inicio tarefas */
+
+.background-tarefa{
+  margin-top: var(--spacing-xlarge);
+  padding-top: var(--spacing-xxlarge);
+  width: 100%;
+  background-color: #f1f4f6;
+  border-top-right-radius: var(--spacing-xlarge);
+  border-top: 1px solid var(--color-text-dark);
+}
+
+.container-tarefa{
+  display: flex;
+  justify-content: space-between;
+  padding-top: var(--spacing-small);
+}
+
+.tarefa{
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-small);
+  font-weight: 400;
+}
+
+.color-botoes-tarefa{
+  color: var(--color-text-dark);
+  margin-left: var(--spacing-default);
+}
+
+.task-feita{
+  text-decoration: line-through;
+}
+
+/* Fim tarefas */
